@@ -28,18 +28,21 @@ const boutons = document.querySelector('Reservation');
 Reservation.addEventListener('click',MessageB1);
 
 function MessageB1() {
+    var nomResa = prompt("A quel nom desirez-vous reserver ?")
+    var telResa = prompt("Quel est votre numero de mobile ?")
     var repHeure = prompt("Heure d'arrivee prevue ?" +
     "\n(horaire d' ouverture : 14H/2H)")
     while(repHeure.length <= 1 || repHeure.length > 4) {
         prompt("Entrez une horaire valide svp");
         break;
     }
-   
     var repPers = prompt("Nombre de personnes ?")
     var repGout = prompt("Quels gouts desirez-vous ?")
     var repBoisson = prompt("Quels boissons desirez-vous ?")
     confirm("Confirmez-vous la reservation ?" +
     "\n" +
+    "\nNom: " + nomResa +
+    "\nNumero de tel: " + telResa +
     "\nHeure d'arrivée: " + repHeure + " H" +
     "\nNombre de personne: " + repPers +
     "\nVous avez choisi le gout: " + repGout +
@@ -60,6 +63,25 @@ function MessageB2() {
         "\nNom : " + name +
         "\nEmail : " + email +
         "\nTelephone : " + telephone +
-        "\nMessage : " + message);
+        "\nMessage : " + message + 
+        "\n" + 
+        "\n" +
+        "\n" +
+        "\nCliquez sur ok pour envoyer");
 }
 
+const snap = document.querySelector("#snap");
+
+snap.addEventListener('click',Messagesnap);
+    
+function Messagesnap() {
+    alert("Snapchat: calypso13001");
+
+}
+const facebook = document.querySelector("#facebook");
+    
+facebook.addEventListener('click',Messagefacebook);
+        
+function Messagefacebook() {
+    alert("Facebook: Shisha le Calypso Lounge");
+}
