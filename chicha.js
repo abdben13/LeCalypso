@@ -85,3 +85,8 @@ facebook.addEventListener('click',Messagefacebook);
 function Messagefacebook() {
     alert("Facebook: Shisha le Calypso Lounge");
 }
+var lacarte = document.querySelector('#lacarte')
+lacarte.addEventListener("click", fenetre);
+function fenetre() {
+    window.open('gouts/NosGouts.html', '_blank', 'with= 500');
+}
