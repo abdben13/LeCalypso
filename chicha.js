@@ -18,12 +18,12 @@ window.addEventListener('load', () => {
     .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.3, '-=1')
     .from(logo, 0.4, {transform: "scale(0)", ease: "power2.out"}, '-=2')
     .staggerFrom(logSociaux2, 1, {top: -200, opacity: 0, ease: "power2.out"}, 0.6)
-    .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.3, '-=1');
+    
     
     
  TL.play();
 })
-const boutons = document.querySelector('Reservation');
+/*const boutons = document.querySelector('Reservation');
 
 Reservation.addEventListener('click',MessageB1);
 
@@ -48,7 +48,7 @@ function MessageB1() {
     "\nVous avez choisi le gout: " + repGout +
     "\nVous avez choisi comme boisson: " + repBoisson);
     
-}
+}*/
 const contact = document.querySelector('Contact');
 
 Contact.addEventListener('click',MessageB2);
@@ -88,5 +88,5 @@ function Messagefacebook() {
 var lacarte = document.querySelector('#lacarte')
 lacarte.addEventListener("click", fenetre);
 function fenetre() {
-    window.open('gouts/NosGouts.html', '_blank', 'with= 500');
+    window.open('/Users/abdelazizben/Desktop/chicha/reservez/reservez.html', '_blank', 'with= 500');
 }

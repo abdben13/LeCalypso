@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80vh;
+    background: url('chicha3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+h1 {
+    margin-top: 2%;
+    font-family:Abril fatface, sans-serif;
+}
+h1 span {
+    margin-left: 35%;
+    color:orange;
+    text-align: center;
+}
+ 
+        
+form button {
+        width: 450px;
+        max-width: 500px;
+        height: 60px;
+        font-weight: 700;
+        font-size: 28px;
+        background: white;
+        border: rgba(48, 48, 48, 0.5) solid 1px;
+        border-radius: 5px;
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+        color: #303030;
+}
+.formulaire {
+    
+    color:black;
+}
+.titre {
+    font-size: 20px;
+    margin-top: 5%;
+    margin-left: 13%;
+    opacity: 90%;
+    width: 500px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 20px 50px 0 50px;
+    background: burlywood;
+}
+input {
+    border:groove;
+}
+.btn-retour {
+    margin-top: 5%;
+    color: #f1f1f1;
+    border-radius: 5%;
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 50px;
+    padding: 10px; 
+    cursor: pointer;
+}
+.btn-retour:hover {
+    transition: all 0.3s ease-in-out;
+    background: white;
+    color: #333;
+}
+.affichage {
+    display:flex;
+}
