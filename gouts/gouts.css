@@ -7,13 +7,11 @@ body {
     
 }
 section {
-    height: 100vh;
+    display:flex;
 }
 h1 {
-    margin: 0;
     padding: 0;
     position: absolute;
-    top: 10%;
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
@@ -40,46 +38,23 @@ h1 span {
         filter: blur(0);
     }
 }
-video {
-    object-fit: cover;
-    position: absolute;
-    height: 100%;
-    opacity: 50%;
-    margin-right: 30%;
-}
-.btn-retour {
-    margin-top: 5%;
-    color: #f1f1f1;
-    border-radius: 5%;
-    border: 2px solid #f1f1f1;
-    outline: none;
-    background: transparent;
-    font-size: 50px;
-    padding: 10px; 
-    cursor: pointer;
-}
-.btn-retour:hover {
-    transition: all 0.3s ease-in-out;
-    background: white;
-    color: #333;
-}
 
 .choixgouts {
+    display:flex;
+    margin-left: 30%;
+    display:flex;
+    opacity: 90%;
+    background-color:burlywood;
     font-weight: bold;
     font-size: 30px;
-    margin-left: 37%;
     color:white;
     position: relative;
 }
 .Menthelogo {
     display:inline;
 }
-#Menthe {
-    display:inline;
-    color: green
-}
 #Pomme {
-    color: greenyellow;
+    color: greenyellow;;
 }
 #Pasteque {
     color: red;
@@ -104,4 +79,38 @@ li {
 }
 img {
     height: 5%;
+}
+.container-btns {
+    margin-top: 5%;
+    margin-right: 30px;
+    position: absolute;
+    
+}
+.btn-first {
+    margin-top: 2%;
+    margin-left: 87%;
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.btn-first:nth-child(1){
+    margin-right: 55%;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+h3 {
+    color: white;
+   margin-top: 5%;
+   margin-left: 40%;
+}
+p {
+    color: black;
 }

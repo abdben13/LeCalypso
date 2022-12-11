@@ -2,8 +2,7 @@
 <html lang="fr">
 
 <head>
-    <title>Reservez une table</table>
-    </title>
+    <title>Reservez une table</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="reservez.css" rel="stylesheet">
@@ -15,8 +14,14 @@
         <span>RESERVER UNE TABLE</span>
     </h1>
     <div class="affichage">
-        <a href="../index.html">
-            <button class="btn-retour" id="boutonret">Accueil</button></a>
+        <div class="container-btns">
+            <a href="../index.html">
+                <button class="btn-first b1" id="Reservation">Accueil</button></a>
+            <button class="btn-first b2" id="lacarte">La carte</button>
+            <a href="../gouts/NosGouts.html">
+                <button class="btn-first b3">Nos gouts</button></a>
+            <button class="btn-first b3" id="Contact">Contact</button>
+        </div>
         <div class="titre">
             <div class="formulaire">
                 <form action="chicha" method="post">
@@ -29,7 +34,7 @@
                         <br>
                         <label for="nom" class="nom">A quel nom desirez-vous reserver</label>
                         <br>
-                        <input type="text" id="nom" name="nom" required>
+                        <input type="text" id="Mynom" name="nom" required>
                     </div>
                     <label for="numero" class="numero">Numero pour vous joindre
                         <br>
@@ -48,7 +53,7 @@
                     <br>
                     <label for="boissons" class="boisson">Quels boissons desirez-vous
                         <br>
-                        <input type="text" id="boissons" name="boissons" required>
+                        <input type="text" id="boissons" name="boissons">
                     </label>
                     <br>
                     <br>
@@ -58,6 +63,18 @@
             </div>
         </div>
     </div>
+    <div class="medias">
+        <img class="bulle" id="snap" src="../img/snap.png" alt="snap" class="logo-medias">
+        <br>
+        <img class="bulle" id="facebook" src="../img/fb.webp" alt="fb" class="logo-medias">
+    </div>
+    <div id="container">
+        <div id="footer" class="adresse">
+            <h3><span>Ouvert 7j/7 de 14H à 2H</span></h3>
+            <h3><span>7 rue Guy Moquet 13001 MARSEILLE</span></h3>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="reservez.js"></script>
 </body>
 

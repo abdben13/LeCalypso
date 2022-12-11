@@ -1,22 +1,46 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    height: 80vh;
+    height: 100vh;
     background: url('chicha3.png');
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     overflow-x: hidden;
 }
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
+}
 h1 {
-    margin-top: 2%;
-    font-family:Abril fatface, sans-serif;
+    font-size: 50px;
+    font-family: Abril fatface, sans-serif;
+    transform: translateY(-50%);
+    margin-left: 30%;
+    color:orange;
+    animation: animate 1s linear forwards;
+    
 }
 h1 span {
-    margin-left: 35%;
-    color:orange;
     text-align: center;
+    animation: animate 1s linear forwards;
 }
- 
+@keyframes animate {
+    0%
+    {
+    opacity: 0;
+    transform: rotateY(90deg);
+    filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
         
 form button {
         width: 450px;
@@ -36,8 +60,7 @@ form button {
 }
 .titre {
     font-size: 20px;
-    margin-top: 5%;
-    margin-left: 13%;
+    margin-left: 28%;
     opacity: 90%;
     width: 500px;
     border: 1px solid;
@@ -48,22 +71,88 @@ form button {
 input {
     border:groove;
 }
-.btn-retour {
-    margin-top: 5%;
-    color: #f1f1f1;
-    border-radius: 5%;
-    border: 2px solid #f1f1f1;
-    outline: none;
-    background: transparent;
-    font-size: 50px;
-    padding: 10px; 
-    cursor: pointer;
-}
-.btn-retour:hover {
-    transition: all 0.3s ease-in-out;
-    background: white;
-    color: #333;
-}
 .affichage {
     display:flex;
 }
+.container-btns {
+    margin-right: 30px;
+    position: absolute;
+    
+}
+.btn-first {
+    margin-top: 2%;
+    margin-left: 87%;
+    border: 2px solid #f1f1f1;
+    outline: none;
+    background: transparent;
+    font-size: 30px;
+    padding: 20px;
+    width: 300px;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.btn-first:nth-child(1){
+    margin-right: 55%;
+}
+.btn-first:hover {
+    transition: all 0.3s ease-in-out;
+    background: #f1f1f1;
+    color: #333;
+}
+.logo {
+    position: absolute;
+    right: 2.9%;
+    top: 4%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+.medias {
+   
+    size: 10px;
+    list-style-type: none;
+    position: absolute;
+    right: 3.3%;
+    bottom: 5%;
+    transform: translateY(-50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.bulle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 50px;
+    background: #f1f1f1;
+    cursor: pointer;
+    position: relative;
+}
+.logo-medias {
+    width: 10px;
+    height: 10px;
+}
+.adresse {
+    text-align: center;
+    color:white;
+    font: bold;
+    font-size: 20px;
+}
+#main {
+    min-height:80%;
+    position:relative;
+    padding-bottom:100px;   /* Hauteur du pied de page */
+ }
+ #footer {
+    display : table-row;
+    position:absolute;
+    bottom:0;  /* on le colle en bas */
+    width:100%;
+    height:100px;   /* Hauteur du pied de page */
+    background-color:black;
+ }
+             
