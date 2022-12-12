@@ -1,10 +1,20 @@
 body {
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
     background-image: url('img/chicha3.png');
     background-repeat: no-repeat;
+    position: relative;
     background-size:cover;
+    overflow-x: hidden;
     
+}
+html, body {
+	height: 100%;
+	margin: 0; padding: 0;
+}
+body {
+	display : table;
+	width: 100%;
 }
 section {
     display:flex;
@@ -40,13 +50,14 @@ h1 span {
 }
 
 .choixgouts {
-    display:flex;
-    margin-left: 30%;
-    display:flex;
+    margin-top: 10%;
+    width: 700px;
+    display: flex;
+    margin-left: 20%;
     opacity: 90%;
     background-color:burlywood;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
     color:white;
     position: relative;
 }
@@ -74,21 +85,18 @@ h1 span {
 #Banane {
     color: yellow;
 }
-li {
-    margin-left: 10%;
-}
 img {
     height: 5%;
 }
 .container-btns {
-    margin-top: 5%;
+    margin-top: 7%;
     margin-right: 30px;
     position: absolute;
     
 }
 .btn-first {
+    margin-left: 90%;
     margin-top: 2%;
-    margin-left: 87%;
     border: 2px solid #f1f1f1;
     outline: none;
     background: transparent;
@@ -106,11 +114,36 @@ img {
     background: #f1f1f1;
     color: #333;
 }
-h3 {
-    color: white;
-   margin-top: 5%;
-   margin-left: 40%;
-}
-p {
+ol {
+    text-align: left;
+    font-size: 20px;
     color: black;
 }
+.adresse {
+    
+    text-align: center;
+    color:white;
+    font: bold;
+    font-size: 20px;
+}
+#main {
+    min-height:80%;
+    position:relative;
+    padding-bottom:100px;   /* Hauteur du pied de page */
+ }
+ #footer {
+    display : table-row;
+    position:absolute;
+    bottom:0;  /* on le colle en bas */
+    width:100%;
+    height:100px;   /* Hauteur du pied de page */
+    background-color:black;
+ }
+ h2{
+    color:blue;
+    text-align: left;
+    font-size: 35px;
+ }
+ p{
+    color: black;
+ }
