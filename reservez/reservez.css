@@ -75,7 +75,7 @@ input {
     display:flex;
 }
 .container-btns {
-    margin-right: 30px;
+    margin-left:75%;
     position: absolute;
     
 }

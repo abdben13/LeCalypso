@@ -20,6 +20,7 @@ section {
     display:flex;
 }
 h1 {
+    margin-top: 5%;
     padding: 0;
     position: absolute;
     transform: translateY(-50%);
@@ -50,12 +51,12 @@ h1 span {
 }
 
 .choixgouts {
-    margin-top: 10%;
+   
+    margin-top: 12%;
     width: 700px;
     display: flex;
     margin-left: 20%;
     opacity: 90%;
-    background-color:burlywood;
     font-weight: bold;
     font-size: 20px;
     color:white;
@@ -114,11 +115,6 @@ img {
     background: #f1f1f1;
     color: #333;
 }
-ol {
-    text-align: left;
-    font-size: 20px;
-    color: black;
-}
 .adresse {
     
     text-align: center;
@@ -140,10 +136,53 @@ ol {
     background-color:black;
  }
  h2{
-    color:blue;
+    color:white;
     text-align: left;
     font-size: 35px;
  }
  p{
+    text-align: center;
     color: black;
  }
+ .gouts {
+    padding-right: 8%;
+    padding-left: 8%;
+    border-radius: 10%;
+    background-color:burlywood;
+    text-align: left;
+ }
+ .dessert {
+    border-radius: 10%;
+    background-color:burlywood;
+    padding-right: 7%;
+    padding-left: 7%;
+    margin-left: 5%;
+    text-align: left;
+ }
+ #dessert {
+    text-align: center;
+ }
+ #boissons {
+    text-align: left;
+ }
+ #gouts {
+    text-align: left;
+ }
+
+ .boisson {
+    border-radius: 10%;
+    background-color:burlywood;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: 5%;
+ }
+ #offre {
+    color: white;
+    background-color: red;
+    font-size: 25px;
+    margin-right: 5%;
+ }
+hr {
+    background-color: black;
+    height: 2px;
+}
