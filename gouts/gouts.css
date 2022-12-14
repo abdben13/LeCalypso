@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background-image: url('img/chicha3.png');
+    background-image: url('../chicha7.jpeg');
     background-repeat: no-repeat;
     position: relative;
     background-size:cover;
@@ -16,7 +16,7 @@ body {
 	display : table;
 	width: 100%;
 }
-section {
+.affichage {
     display:flex;
 }
 h1 {
@@ -51,48 +51,24 @@ h1 span {
 }
 
 .choixgouts {
-   
+    z-index: 10;
     margin-top: 12%;
     width: 700px;
-    display: flex;
+    display:flex;
     margin-left: 20%;
     opacity: 90%;
     font-weight: bold;
     font-size: 20px;
     color:white;
-    position: relative;
 }
-.Menthelogo {
-    display:inline;
-}
-#Pomme {
-    color: greenyellow;;
-}
-#Pasteque {
-    color: red;
-}
-#Fraise {
-    color: red;
-}
-#Framboise {
-    color: pink;
-}
-#Mangue {
-    color: orange;
-}
-#Melon {
-    color: yellowgreen;
-}
-#Banane {
-    color: yellow;
-}
+
 img {
     height: 5%;
 }
 .container-btns {
+    position: absolute;
     margin-top: 7%;
     margin-right: 30px;
-    position: absolute;
     
 }
 .btn-first {
@@ -135,54 +111,134 @@ img {
     height:100px;   /* Hauteur du pied de page */
     background-color:black;
  }
- h2{
-    color:white;
-    text-align: left;
-    font-size: 35px;
- }
- p{
-    text-align: center;
-    color: black;
- }
- .gouts {
-    padding-right: 8%;
-    padding-left: 8%;
-    border-radius: 10%;
-    background-color:burlywood;
-    text-align: left;
- }
- .dessert {
-    border-radius: 10%;
-    background-color:burlywood;
-    padding-right: 7%;
-    padding-left: 7%;
-    margin-left: 5%;
-    text-align: left;
- }
- #dessert {
-    text-align: center;
- }
- #boissons {
-    text-align: left;
- }
- #gouts {
-    text-align: left;
- }
-
- .boisson {
-    border-radius: 10%;
-    background-color:burlywood;
-    padding-right: 5%;
-    padding-left: 5%;
-    margin-left: 5%;
- }
+ 
  #offre {
-    color: white;
-    background-color: red;
+    font-family:Arial, Helvetica, sans-serif;
+    opacity: 90%;
+    color: black;
+    background-color:orange;
     font-size: 25px;
     margin-right: 5%;
  }
 hr {
     background-color: black;
     height: 2px;
+    text-align: center;
+}
+video {
+    
+    height: 100%;
+    opacity: 50%;
+}
+.video1 {
+    
+    position: absolute;
+}
+.lesgouts {
+    opacity: 90%;
+}
+
+.slide {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    display: flex;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+h3 {
+    margin-top: 20%;
+    text-align: center;
+    font-size: 30px;
+    color: orange;
+}
+
+p {
+    opacity: 90%;
+    background-color: transparent;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+}
+
+.ensemble-fleche {
+    z-index: 9;
+    width: 700px;
+    min-width: 700px;
+    display: flex;
+    margin: auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.card {
+    border: 1px solid whitesmoke;
+    width: 200px;
+    height: 400px;
+    min-width: 200px;
+    min-height: 400px;
+    transition-duration: 1000ms;
+    margin: 5px;
+}
+
+.card1 {
+    border-radius:45px;
+    background-image: url("../boissons4.jpg");
+    background-repeat: no-repeat;
+   background-size: contain;
+   background-size: 200px 450px;
+   padding-bottom: 5%;
+}
+
+.card2 {
+    border-radius:45px;
+    background-image: url("../gouts/img/chichaold.jpg");
+    background-repeat: no-repeat;
+   background-size: contain;
+   background-size: 200px 450px;
+    background-size: cover;
+    
+}
+
+.card3 {
+    border-radius:45px;
+    background-color: blanchedalmond;
+    background-size: cover;
+}
+.card4 {
+    border-radius:45px;
+    background-color:transparent;
+    background-size: cover;
+}
+.Notregouts {
+    padding-left:35px;
+    padding-right: 35px;
+    text-align: center;
+    display: table;
+}
+.Notreboissons {
+    display: table;
+    padding-left:35px;
+    padding-right: 35px;
+}
+.Notredesserts {
+    display: table;
+    padding-left:35px;
+    padding-right: 35px; 
+}
+.Notreconfiserie {
+    display: table;
+    padding-left:35px;
+    padding-right: 35px;
+}
+.cardcard2 {
+    box-shadow: none;
+}
+#gout {
+    color: white;
+}
+#bonbon {
+    color:white;
 }

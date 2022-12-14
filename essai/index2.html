@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index2</title>
+</head>
+
+<body>
+    <a href="../index.html">
+        <button class="btn-first b1" id="Reservation">Accueil</button></a>
+    <div class="ensemble-fleche">
+        <img src="fleche_gauche.svg" class="img-svg1">
+        <div class="slide">
+            <div class="card cardX"></div>
+            <div class="card card1">
+                <section class="lesgouts">
+                    <h2>Nos Gouts</h2>
+                    <p>Love 66</p>
+                    <p>Hawai</p>
+                    <p>Mi Amor</p>
+                    <p>Lady Killer</p>
+                    <p>Menthe</p>
+                    <p>Raisin</p>
+                </section>
+            </div>
+            <div class="card card2">
+                <section class="lesboissons">
+                    <h2>Boissons</h2>
+                    <p>Coca</p>
+                    <p>Coca zero 66</p>
+                    <p>Oasis</p>
+                    <p>Seven up</p>
+                    <p>Tropico</p>
+                    <p>Lipton</p>
+                    <p>Sirop</p>
+                </section>
+            </div>
+            <div class="card card3">
+                <div class="card card2">
+                    <section class="lesdesserts">
+                        <h2>Dessserts</h2>
+                        <p>Tiramisu</p>
+                        <p>Mousse au chocolat</p>
+                        <p>Tarte au daim</p>
+                        <p>Cookie</p>
+                        <p>Glaces</p>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <img src="fleche_droite.svg" class="img-svg2">
+    </div>
+    <style>
+        .lesgouts {
+            opacity: 90%;
+        }
+
+        .slide {
+            padding-top: 80px;
+            padding-bottom: 80px;
+            display: flex;
+            overflow: scroll;
+            scroll-behavior: smooth;
+        }
+
+        h2 {
+            margin-top: 10%;
+            text-align: center;
+            font-size: 30px;
+            color: black;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+
+        .ensemble-fleche {
+            width: 700px;
+            min-width: 700px;
+            display: flex;
+            margin: auto;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card {
+            border: 1px solid whitesmoke;
+            width: 200px;
+            height: 400px;
+            min-width: 200px;
+            min-height: 400px;
+            transition-duration: 1000ms;
+            margin: 5px;
+            z-index: 1;
+        }
+
+        .card1 {
+            background-color: blanchedalmond;
+            background-size: cover;
+        }
+
+        .card2 {
+            background-color: blanchedalmond;
+            background-size: cover;
+
+        }
+
+        .card3 {
+            background-color: blanchedalmond;
+            background-size: cover;
+        }
+
+        .card4 {
+            background: url("../essai/chicha2.png");
+            background-size: cover;
+        }
+
+        .card5 {
+            background: url("../essai/chicha6.jpeg");
+            background-size: cover;
+        }
+
+        .card6 {
+            background: url("../essai/chichaold2.jpg");
+            background-size: cover;
+        }
+    </style>
+    <script>
+        var tab = document.querySelectorAll(".card");
+        var fleche1 = document.querySelector(".img-svg1");
+        var fleche2 = document.querySelector(".img-svg2");
+        var slide = document.querySelector(".slide");
+        var indice_carte_milieu = 1;
+        function augmenter(variable) {
+            variable.style = "z-index:2;transform: scale(1.2);width:calc(2*100%);";
+        }
+        function diminuer(variable) {
+            variable.style = "transform: scale(1); z-index=1";
+
+        }
+
+        window.onload = () => {
+            augmenter(tab[indice_carte_milieu]);
+        }
+
+        fleche1.onclick = () => {
+            if (indice_carte_milieu != 1) {
+                diminuer(tab[indice_carte_milieu]);
+                console.log(tab[indice_carte_milieu].width);
+                augmenter(tab[indice_carte_milieu - 1]);
+                slide.scrollBy(-210, 0);
+                indice_carte_milieu = indice_carte_milieu - 1;
+            }
+        }
+
+        fleche2.onclick = () => {
+            if (indice_carte_milieu != 9) {
+
+                diminuer(tab[indice_carte_milieu]);
+                augmenter(tab[indice_carte_milieu + 1]);
+                slide.scrollBy(210, 0);
+                indice_carte_milieu = indice_carte_milieu + 1;
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>

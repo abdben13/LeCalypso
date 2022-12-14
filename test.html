@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<title>test</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+<style type="text/css">
+</style>
+<canvas id="canvas"></canvas>
+<script src="test.js"></script>
+<script>
+    var canvas = document.getElementById('canvas')
+    var ctx = canvas.getContext('2d')
+    canvas.width = innerWidth
+    canvas.height = innerHeight
+
+    var party = smokemachine(ctx, [18, 16, 54])
+    party.start() // start animating
+    party.setPreDrawCallback(function (dt) {
+        party.addSmoke(innerWidth / 2, innerHeight, .5)
+        canvas.width = innerWidth
+        canvas.height = innerHeight
+    })
+
+    // party.addsmoke(innerWidth/2, innerHeight, 100)
+    // onclick=e => {
+    // 	console.log(e)
+    // 	party.step()
+    // }
+
+    onmousemove = function (e) {
+        var x = e.clientX
+        var y = e.clientY
+        var n = .5
+        var t = Math.floor(Math.random() * 200) + 3800
+        party.addsmoke(x, y, n, t)
+    }
+
+</script>
+<a href="../chicha/essai/index2.html">
+    <button class="btn-first b1" id="Reservation">Accueil</button></a>
+</body>
+
+</html>

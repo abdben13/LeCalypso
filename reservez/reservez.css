@@ -1,7 +1,7 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: url('chicha3.png');
+    background-image: url("../chicha7.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -55,10 +55,10 @@ form button {
         color: #303030;
 }
 .formulaire {
-    
     color:black;
 }
 .titre {
+    z-index: 10;
     font-size: 20px;
     margin-left: 28%;
     opacity: 90%;
@@ -75,6 +75,7 @@ input {
     display:flex;
 }
 .container-btns {
+    z-index: 10;
     margin-left:75%;
     position: absolute;
     
@@ -154,4 +155,241 @@ input {
     height:100px;   /* Hauteur du pied de page */
     background-color:black;
  }
-             
+ .ag-format-container {
+    width: 1142px;
+    margin: 0 auto;
+  }
+  
+  .ag-smoke-block {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display:contents;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .ag-smoke_img {
+    width: 100%;
+    height: 100%;
+  
+    z-index: 10;
+    position: absolute;
+    bottom: 4%;
+  }
+  .ag-smoke_img__left {
+    left: 0;
+  
+    -webkit-animation: an-smoke-left 10s linear infinite;
+    -moz-animation: an-smoke-left 10s linear infinite;
+    -o-animation: an-smoke-left 10s linear infinite;
+    animation: an-smoke-left 10s linear infinite;
+  }
+  .ag-smoke_img__right {
+    right: 0;
+  
+    -webkit-animation: an-smoke-right 10s linear infinite;
+    -moz-animation: an-smoke-right 10s linear infinite;
+    -o-animation: an-smoke-right 10s linear infinite;
+    animation: an-smoke-right 10s linear infinite;
+  }
+  
+  @-webkit-keyframes an-smoke-left {
+    0%, 100% {
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -webkit-transform: translate(-10%,0%);
+      transform: translate(-10%, 0%);
+    }
+    50% {
+      -webkit-transform: translate(-20%, 0%);
+      transform: translate(-20%, 0%);
+    }
+    75% {
+      -webkit-transform: translate(-10%, 0%);
+      transform: translate(-10%, 0%);
+    }
+  }
+  @-moz-keyframes an-smoke-left {
+    0%, 100% {
+      -moz-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -moz-transform: translate(-10%,0%);
+      transform: translate(-10%, 0%);
+    }
+    50% {
+      -moz-transform: translate(-20%, 0%);
+      transform: translate(-20%, 0%);
+    }
+    75% {
+      -moz-transform: translate(-10%, 0%);
+      transform: translate(-10%, 0%);
+    }
+  }
+  @-o-keyframes an-smoke-left {
+    0%, 100% {
+      -o-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -o-transform: translate(-10%,0%);
+      transform: translate(-10%, 0%);
+    }
+    50% {
+      -o-transform: translate(-20%, 0%);
+      transform: translate(-20%, 0%);
+    }
+    75% {
+      -o-transform: translate(-10%, 0%);
+      transform: translate(-10%, 0%);
+    }
+  }
+  @keyframes an-smoke-left {
+    0%, 100% {
+      -webkit-transform: translate(0%, 0%);
+      -moz-transform: translate(0%, 0%);
+      -o-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -webkit-transform: translate(-10%, 0%);
+      -moz-transform: translate(-10%, 0%);
+      -o-transform: translate(-10%, 0%);
+      transform: translate(-10%, 0%);
+    }
+    50% {
+      -webkit-transform: translate(-20%, 0%);
+      -moz-transform: translate(-20%, 0%);
+      -o-transform: translate(-20%, 0%);
+      transform: translate(-20%, 0%);
+    }
+    75% {
+      -webkit-transform: translate(-10%, 0%);
+      -moz-transform: translate(-10%, 0%);
+      -o-transform: translate(-10%, 0%);
+      transform: translate(-10%, 0%);
+    }
+  }
+  
+  @-webkit-keyframes an-smoke-right {
+    0%, 100% {
+      -webkit-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -webkit-transform: translate(10%,0%);
+      transform: translate(10%, 0%);
+    }
+    50% {
+      -webkit-transform: translate(20%, 0%);
+      transform: translate(20%, 0%);
+    }
+    75% {
+      -webkit-transform: translate(10%, 0%);
+      transform: translate(10%, 0%);
+    }
+  }
+  @-moz-keyframes an-smoke-right {
+    0%, 100% {
+      -moz-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -moz-transform: translate(10%,0%);
+      transform: translate(10%, 0%);
+    }
+    50% {
+      -moz-transform: translate(20%, 0%);
+      transform: translate(20%, 0%);
+    }
+    75% {
+      -moz-transform: translate(10%, 0%);
+      transform: translate(10%, 0%);
+    }
+  }
+  @-o-keyframes an-smoke-right {
+    0%, 100% {
+      -o-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -o-transform: translate(10%,0%);
+      transform: translate(10%, 0%);
+    }
+    50% {
+      -o-transform: translate(20%, 0%);
+      transform: translate(20%, 0%);
+    }
+    75% {
+      -o-transform: translate(10%, 0%);
+      transform: translate(10%, 0%);
+    }
+  }
+  @keyframes an-smoke-right {
+    0%, 100% {
+      -webkit-transform: translate(0%, 0%);
+      -moz-transform: translate(0%, 0%);
+      -o-transform: translate(0%, 0%);
+      transform: translate(0%, 0%);
+    }
+    25% {
+      -webkit-transform: translate(10%, 0%);
+      -moz-transform: translate(10%, 0%);
+      -o-transform: translate(10%, 0%);
+      transform: translate(10%, 0%);
+    }
+    50% {
+      -webkit-transform: translate(20%, 0%);
+      -moz-transform: translate(20%, 0%);
+      -o-transform: translate(20%, 0%);
+      transform: translate(20%, 0%);
+    }
+    75% {
+      -webkit-transform: translate(10%, 0%);
+      -moz-transform: translate(10%, 0%);
+      -o-transform: translate(10%, 0%);
+      transform: translate(10%, 0%);
+    }
+  }
+  
+  
+  @media only screen and (max-width: 767px) {
+    .ag-format-container {
+      width: 96%;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 639px) {
+  
+  }
+  
+  @media only screen and (max-width: 479px) {
+  
+  }
+  
+  @media (min-width: 768px) and (max-width: 979px) {
+    .ag-format-container {
+      width: 750px;
+    }
+  
+  }
+  
+  @media (min-width: 980px) and (max-width: 1161px) {
+    .ag-format-container {
+      width: 960px;
+    }
+  
+  }
+  video {
+    height: 100%;
+    opacity: 40%;
+}
+.video1 {
+    
+    position: absolute;
+}              

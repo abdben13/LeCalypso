@@ -7,9 +7,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    background: url('chicha3.png');
+    background: url("chicha7.jpeg");
+    background-size:contain;
     background-repeat: no-repeat;
-    background-size: cover;
     position: relative;
     overflow-x: hidden;
 }
@@ -121,14 +121,16 @@ img {
     color: white;
 }
 video {
-    height: 100vh;
-    opacity: 50%;
+    
+    height: 100%;
+    opacity: 70%;
 }
 .tete {
     position: relative;
 }
 
 .video1 {
+    
     position: absolute;
 }
 .selector-for-some-widget {
