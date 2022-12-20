@@ -1,0 +1,27 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Contact</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="contact.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Contact</h1>
+    <form method="post" action="contact">
+        <label for="nom">Entrez votre nom :</label>
+        <input type="text" name="nom" id="nom" required maxlength="20"><br>
+        <label for="mail">Entrez votre email :</label>
+        <input type="email" name="mail" id="mail" required><br>
+        <label for="tel">Entrez votre numero de telephone :</label>
+        <input type="tel" name="tel" id="tel" required><br>
+        <label for="message">Entrez votre message :</label>
+        <input type="text" name="message" id="message" required maxlength="200"><br>
+
+        <input type="submit" name="envoyer" value="Envoyer">
+    </form>
+</body>
+
+</html>

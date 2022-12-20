@@ -148,11 +148,26 @@ function Messageenvoi() {
     var heureResa = document.getElementById('heure').value;
     var heureResa2 = document.getElementById('heure2').value;
     var numResa = document.getElementById('numero').value;
+    var r1 = /\d/; /*trouve trouve les chiffres entre 0 et 9*/
+    var R3 = /[0-9]{10}/; /* verifie qu il ya bien une serie de 10 chiffres entre 0 et 9*/
+    var R2 = numResa.match(r1);
+    var r = numResa.match(R3); 
+    var r4 = /^0/;/*oblige un 0 au debut du numero*/
+    var r5 = numResa.match(r4); 
+if (!r) {
+    alert("Entrez un numero valide svp");
+}
+    else if(!R2) {
+        alert("Entrez un numero valide svp")  
+    }
+    else if(!r5) {
+        alert("Entrez un numero valide svp")  
+    }
+
     var persResa = document.getElementById('personne').value;
     var boissResa = document.getElementById('boissons').value;
     var goutResa = document.getElementById('gout').value;
-    
-    confirm("Confirmez-vous la reservation ?" +
+        confirm("Confirmez-vous la reservation ?" +
     "\n" +
     "\nNom: " + nomResa +
     "\nNumero de tel: " + numResa +
@@ -161,6 +176,8 @@ function Messageenvoi() {
     "\nVous avez choisi le gout: " + goutResa +
     "\nVous avez choisi comme boisson: " + boissResa);
 }
+
+
 /*if(Messageenvoi) {
     alert("Reservation envoyé");
 }
