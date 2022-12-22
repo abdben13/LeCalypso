@@ -12,6 +12,7 @@
     <h1>Contact</h1>
     <form method="post" action="contact">
         <label for="nom">Entrez votre nom :</label>
+        <span id="nom_manquant"></span>
         <input type="text" name="nom" id="nom" required maxlength="20"><br>
         <label for="mail">Entrez votre email :</label>
         <input type="email" name="mail" id="mail" required><br>
@@ -20,8 +21,29 @@
         <label for="message">Entrez votre message :</label>
         <input type="text" name="message" id="message" required maxlength="200"><br>
 
-        <input type="submit" name="envoyer" value="Envoyer">
+        <input type="submit" id="envoyer" value="Envoyer">
     </form>
+
+    <script>
+        var envoyer = document.getElementById("envoyer");
+        var nom = document.getElementById("nom");
+        var nom_m = document.getElementById("nom_manquant");
+        var nom_v = /[a-zA-Z]+/; /* oblige soit un a soit A au debut du nom*/
+        envoyer.addEventListener('click', f_valid);
+
+        function f_valid(e) {
+            if (nom.validity.valueMissing) { /*verifie que le champs n est pas vide*/
+                e.preventDefault();/*bloque l envoi du formulaire*/
+                nom_m.textContent = "Nom manquant";/*rempli le span par */
+                nom_m.style.color = "red";
+            } else if (nom_v.test(nom.value) == false) {/*verifie qu il y a bien des lettres*/
+                event.preventDefault();
+                nom_m.textContent = "Format incorrect";
+                nom_m.style.color = "red";
+            }
+            else { }
+        }
+    </script>
 </body>
 
 </html>

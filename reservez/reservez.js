@@ -148,7 +148,7 @@ function Messageenvoi() {
     var heureResa = document.getElementById('heure').value;
     var heureResa2 = document.getElementById('heure2').value;
     var numResa = document.getElementById('numero').value;
-    var r1 = /\d/; /*trouve trouve les chiffres entre 0 et 9*/
+    var r1 = /\d/; /*trouve les chiffres entre 0 et 9*/
     var R3 = /[0-9]{10}/; /* verifie qu il ya bien une serie de 10 chiffres entre 0 et 9*/
     var R2 = numResa.match(r1);
     var r = numResa.match(R3); 
