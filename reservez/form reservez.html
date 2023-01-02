@@ -1,0 +1,66 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>formulaire reservation</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="form reservez.css" rel="stylesheet">
+</head>
+
+<body>
+    <form action="" class="box">
+        <label for="nom" class="nom">A quel nom desirez-vous reserver?</label>
+        <br>
+        <input type="text" id="Mynom" name="nom" required maxlength="20">
+        <br>
+        <label for="heure" class="heure">Heure d'arrivée prevue
+            <br>
+            <input type="number" id="heure" name="heure" required max="23">
+            <input type="number" id="heure2" name="heure" required max="59">
+        </label>
+        <br>
+        <label for="numero" class="numero">Numero pour vous joindre
+            <br>
+            <input type="tel" id="numero" name="numero" required>
+        </label>
+        <br>
+        <label for="personne" class="personne">Pour combien de personnes desirez-vous reserver?
+            <br>
+            <input type="number" id="personne" name="personne" required>
+        </label>
+        <br>
+        <label for="gout" class="gout">Quel gout desirez-vous?
+            <br>
+            <select>
+                <option value=""></option>
+                <option value="Love 66">Love 66</option>
+                <option value="Mi Amor">Mi Amor</option>
+                <option value="Hawai">Hawai</option>
+                <option value="Menthe">Menthe</option>
+                <option value="Raisin">Raisin</option>
+                <option value="Lady Killer">Lady Killer</option>
+            </select>
+        </label>
+        <br>
+        <label for="boissons" class="boisson">Quels boissons desirez-vous?
+            <br>
+            <select>
+                <option value=""></option>
+                <option value="Coca">Coca</option>
+                <option value="Coca Zero">Coca Zero</option>
+                <option value="Tropico">Tropico</option>
+                <option value="Oasis">Oasis</option>
+                <option value="Sirops">Sirops</option>
+                <option value="Cafe">Cafe</option>
+                <option value="The">The</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <br>
+        <button type="submit" class="envoyer">Envoyer</button>
+    </form>
+</body>
+
+</html>
