@@ -16,8 +16,8 @@
         <br>
         <label for="heure" class="heure">Heure d'arrivée prevue
             <br>
-            <input type="number" id="heure" name="heure" required max="23">
-            <input type="number" id="heure2" name="heure" required max="59">
+            <input type="number" id="heure" name="heure" required min="0" max="23">
+            <input type="number" id="heure2" name="heure" required min="0" max="59">
         </label>
         <br>
         <label for="numero" class="numero">Numero pour vous joindre
@@ -27,10 +27,10 @@
         <br>
         <label for="personne" class="personne">Pour combien de personnes desirez-vous reserver?
             <br>
-            <input type="number" id="personne" name="personne" required>
+            <input type="number" id="personne" name="personne" required min="0" max="10">
         </label>
         <br>
-        <label for="gout" class="gout">Quel gout desirez-vous?
+        <label for="gout" class="gout" id="gout">Quel gout desirez-vous?
             <br>
             <select>
                 <option value=""></option>
@@ -43,7 +43,7 @@
             </select>
         </label>
         <br>
-        <label for="boissons" class="boisson">Quels boissons desirez-vous?
+        <label for="boissons" class="boisson" id="boisson">Quels boissons desirez-vous?
             <br>
             <select>
                 <option value=""></option>
@@ -61,6 +61,7 @@
         <br>
         <button type="submit" class="envoyer">Envoyer</button>
     </form>
+    <script src="form reservez.js"></script>
 </body>
 
 </html>
